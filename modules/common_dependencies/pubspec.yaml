@@ -1,0 +1,17 @@
+name: common_dependencies
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+
+  # Import environment so it is accessible from everywhere
+  environment: 
+    path: ../environment
+
+  get_it: ^7.6.7
+  get: ^4.6.6
+  get_storage: ^2.1.1

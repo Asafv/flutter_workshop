@@ -1,0 +1,64 @@
+name: flutter_workshop
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_native_splash: ^2.3.10
+
+  # This is a modules sample dependencies
+  common_dependencies:
+    path: ./modules/common_dependencies
+  models:
+    path: ./modules/models
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+  # Used to build native flavors (Android + iOS)
+  flutter_flavorizr: ^2.2.1
+
+flutter:
+  uses-material-design: true
+
+
+scripts:
+  # run commands 
+  dev: flutter run --flavor dev --dart-define="FLAVOR=dev"
+  staging: flutter run --flavor staging --dart-define="FLAVOR=staging"
+  prod: flutter run --flavor prod --dart-define="FLAVOR=prod"
+  
+  create:
+    # splash: dart run flutter_native_splash:create
+    module: dart create -t package
+
+
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "flutter_workshop-DEV"
+      android:
+        generateDummyAssets: false
+        applicationId: "com.tikal.flutter_workshop.dev"
+      ios:
+        generateDummyAssets: false
+        bundleId: "com.tikal.flutter_workshop.dev"
+
+    prod:
+      app:
+        name: "flutter_workshop"
+      android:
+        generateDummyAssets: false
+        applicationId: "com.tikal.flutter_workshop"
+      ios:
+        generateDummyAssets: false
+        bundleId: "com.tikal.flutter_workshop"
