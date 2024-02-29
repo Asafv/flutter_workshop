@@ -1,5 +1,5 @@
 name: flutter_workshop
-description: "A new Flutter project."
+description: "The Workshop in the world!"
 publish_to: 'none'
 version: 0.1.0
 
@@ -29,11 +29,14 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  assets:
+    - assets/
+    - assets/svgs/
+    - assets/images/
 
 scripts:
   # run commands 
   dev: flutter run --flavor dev --dart-define="FLAVOR=dev"
-  staging: flutter run --flavor staging --dart-define="FLAVOR=staging"
   prod: flutter run --flavor prod --dart-define="FLAVOR=prod"
   
   create:

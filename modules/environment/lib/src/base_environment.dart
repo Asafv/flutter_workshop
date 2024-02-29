@@ -8,17 +8,6 @@ enum Flavor {
 
   factory Flavor.fromName(String name) =>
       Flavor.values.firstWhere((element) => element.name == name);
-
-  String get title {
-    switch (this) {
-      case Flavor.dev:
-        return 'FlutterWorkshop DEV';
-      case Flavor.prod:
-        return 'FlutterWorkshop';
-      default:
-        return throw Exception('no flavor supported');
-    }
-  }
 }
 
 T? runOnFlavor<T>({
