@@ -18,6 +18,12 @@ dependencies:
   models:
     path: ./modules/models
 
+  # Our new modules
+  core:
+    path: ./modules/core
+  login:
+    path: ./modules/ui/login
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
