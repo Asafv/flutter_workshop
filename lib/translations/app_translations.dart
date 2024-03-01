@@ -8,6 +8,12 @@ class AppTranslations extends Translations {
           "runningOn": "ENV: @env",
           "endpoint": "Endpoint: @url",
           "randomKey": "RandomKey: @randomKey",
+          "loginTitle": "Login",
+          "loginDescription": "Login and start your journey",
+          "loginInProgress": "Login in progress\nThis can take a while...",
+          "login": "Login",
+          "tryAgainError": "Something went wrong.\nPlease try again.",
+          "tryAgain": "Try Again"
         }
       };
 }

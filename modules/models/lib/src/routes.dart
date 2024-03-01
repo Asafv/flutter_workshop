@@ -1,6 +1,7 @@
 // TODO add your routes here
 enum Routes {
   home,
+  login,
 }
 
 extension RouteUtils on Routes {
