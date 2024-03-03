@@ -2,6 +2,7 @@
 enum Routes {
   home,
   login,
+  // TODO add biometic route
 }
 
 extension RouteUtils on Routes {

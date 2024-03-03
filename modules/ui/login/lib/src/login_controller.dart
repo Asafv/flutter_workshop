@@ -1,7 +1,11 @@
 import 'package:common_dependencies/common_dependencies.dart';
+import 'package:core/core.dart';
 import 'package:models/models.dart';
 
 class LoginController extends GetxController with StateMixin {
+  final AuthManager _authManager;
+  LoginController(this._authManager);
+
   // change this to see success flow
   bool error = false;
 
@@ -22,10 +26,10 @@ class LoginController extends GetxController with StateMixin {
     // Reactive update the UI
     descriptionText.value = "loginInProgress".tr;
 
-    await Future.delayed(Duration(seconds: 3));
+    final isLoggedIn = await _authManager.login();
 
     // error
-    if (error) {
+    if (!isLoggedIn) {
       descriptionText.value = "loginDescription".tr;
       change(null, status: RxStatus.error("tryAgainError".tr));
       return;

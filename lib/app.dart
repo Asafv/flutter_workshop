@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       // theme: Themes.lightTheme,
       // darkTheme: Themes.darkTheme,
       // themeMode: Themes().theme,
-      initialRoute: Routes.login.path,
+      initialRoute: Routes.home.path,
       getPages: pages,
       translations: AppTranslations(),
       defaultTransition: Transition.fade,
