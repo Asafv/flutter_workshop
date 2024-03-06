@@ -4,7 +4,10 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         "en_US": {
-          "welcome": "Flutter Workshop is ALIVE!",
+          "toTheMoon": "To the Moon!",
+          "toTheGround": "To the Ground!",
+          "toGround": "To Ground",
+          "toMoon": "To Moon",
           "runningOn": "ENV: @env",
           "endpoint": "Endpoint: @url",
           "randomKey": "RandomKey: @randomKey",

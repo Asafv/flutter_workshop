@@ -1,5 +1,5 @@
 name: flutter_workshop
-description: "The Workshop in the world!"
+description: "The Best Workshop in the world!"
 publish_to: 'none'
 version: 0.1.0
 
@@ -15,14 +15,18 @@ dependencies:
   # This is a modules sample dependencies
   common_dependencies:
     path: ./modules/common_dependencies
+  common_ui:
+    path: ./modules/common_ui
   models:
     path: ./modules/models
-
-  # Our new modules
   core:
     path: ./modules/core
   login:
     path: ./modules/ui/login
+
+    # TODO add biometric module
+    # TODO add home module
+    # TODO add settings module
   
 dev_dependencies:
   flutter_test:
@@ -37,7 +41,7 @@ flutter:
 
   assets:
     - assets/
-    - assets/svgs/
+    - assets/anims/
     - assets/images/
 
 scripts:

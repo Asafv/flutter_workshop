@@ -1,8 +1,8 @@
-// TODO add your routes here
 enum Routes {
   home,
   login,
   // TODO add biometic route
+  // TODO add settings route
 }
 
 extension RouteUtils on Routes {

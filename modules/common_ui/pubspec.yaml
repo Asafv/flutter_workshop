@@ -10,4 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  common_dependencies:
+    path: ../common_dependencies
+
   flutter_svg: ^2.0.10+1
+  lottie: ^3.1.0

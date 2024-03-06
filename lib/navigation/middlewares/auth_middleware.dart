@@ -17,7 +17,7 @@ class AuthMiddleware extends GetMiddleware {
       case AuthState.loginRequired:
         return RouteSettings(name: Routes.login.path);
 
-      // TODO add another route here
+      // TODO add biometric route if auth state is required
       case AuthState.biometricRequired:
       // return RouteSettings(name: Routes.biometric.path);
 

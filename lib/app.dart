@@ -1,5 +1,5 @@
 import 'package:common_dependencies/common_dependencies.dart';
-import 'package:flutter/material.dart';
+import 'package:common_ui/common_ui.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:models/models.dart';
 
@@ -15,9 +15,9 @@ class MainApp extends StatelessWidget {
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // theme: Themes.lightTheme,
-      // darkTheme: Themes.darkTheme,
-      // themeMode: Themes().theme,
+      theme: Themes.lightTheme,
+      darkTheme: Themes.darkTheme,
+      themeMode: Themes().theme,
       initialRoute: Routes.home.path,
       getPages: pages,
       translations: AppTranslations(),

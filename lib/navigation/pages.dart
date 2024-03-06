@@ -17,7 +17,7 @@ final pages = [
     curve: Curves.easeInOut,
     transitionDuration: const Duration(milliseconds: 300),
     // binding: HomeBinding(),
-    page: () => const HomePage(),
+    page: () => HomePage(),
   ),
   GetPage(
     name: Routes.login.path,
