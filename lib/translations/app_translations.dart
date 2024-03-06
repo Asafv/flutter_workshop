@@ -6,8 +6,8 @@ class AppTranslations extends Translations {
         "en_US": {
           "toTheMoon": "To the Moon!",
           "toTheGround": "To the Ground!",
-          "toGround": "To Ground",
-          "toMoon": "To Moon",
+          "crashToGround": "Crash to Ground",
+          "flyToMoon": "Fly to Moon",
           "runningOn": "ENV: @env",
           "endpoint": "Endpoint: @url",
           "randomKey": "RandomKey: @randomKey",

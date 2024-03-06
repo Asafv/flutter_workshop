@@ -69,7 +69,8 @@ class HomePage extends StatelessWidget {
             Obx(
               () => FilledButton(
                   onPressed: () => _toTheMoon.value = !_toTheMoon.value,
-                  child: Text(_toTheMoon.value ? "toGround".tr : "toMoon".tr)),
+                  child: Text(
+                      _toTheMoon.value ? "crashToGround".tr : "flyToMoon".tr)),
             ).marginOnly(bottom: Get.theme.layout.mediumPadding),
           ],
         ),
