@@ -28,4 +28,6 @@ final pages = [
     page: () => LoginPage(),
   ),
   // TODO add biometric page (from biometric module)
+
+  // TODO add settings page (from settings module)
 ];
