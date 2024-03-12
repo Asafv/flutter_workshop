@@ -16,7 +16,10 @@ class LoginPage extends GetView<LoginController> {
               'loginTitle'.tr,
               textAlign: TextAlign.center,
               style: Get.textTheme.displayMedium,
-            ).marginOnly(top: 60, bottom: 24),
+            ).marginOnly(
+              top: Get.theme.layout.xLargePadding,
+              bottom: Get.theme.layout.mediumPadding,
+            ),
 
             /// independant reactive widget
             Obx(
@@ -24,7 +27,7 @@ class LoginPage extends GetView<LoginController> {
                 controller.descriptionText.value,
                 textAlign: TextAlign.center,
                 style: Get.textTheme.headlineSmall,
-              ).marginOnly(bottom: 60),
+              ).marginOnly(bottom: Get.theme.layout.xLargePadding),
             ),
 
             /// State management from controller StateMixing
@@ -34,7 +37,7 @@ class LoginPage extends GetView<LoginController> {
                   FilledButton(
                     onPressed: controller.onLoginClick,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(Get.theme.layout.smallPadding),
                       child: Text(
                         "login".tr,
                         style: Get.textTheme.headlineMedium
@@ -53,11 +56,11 @@ class LoginPage extends GetView<LoginController> {
                     style: Get.textTheme.titleLarge?.copyWith(
                       color: Get.theme.colorScheme.error,
                     ),
-                  ).marginOnly(bottom: 24),
+                  ).marginOnly(bottom: Get.theme.layout.mediumPadding),
                   FilledButton(
                     onPressed: controller.onTryAgainClick,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(Get.theme.layout.smallPadding),
                       child: Text(
                         "tryAgain".tr,
                         style: Get.textTheme.headlineSmall?.copyWith(
@@ -71,7 +74,7 @@ class LoginPage extends GetView<LoginController> {
               ),
             ),
           ],
-        ).paddingSymmetric(horizontal: 16),
+        ).paddingSymmetric(horizontal: Get.theme.layout.defaultPadding),
       ),
     );
   }

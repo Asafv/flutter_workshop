@@ -21,6 +21,8 @@ dependencies:
     path: ./modules/models
   core:
     path: ./modules/core
+
+  # UI modules
   login:
     path: ./modules/ui/login
 

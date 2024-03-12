@@ -1,12 +1,12 @@
 import 'package:common_dependencies/common_dependencies.dart';
 
 import '../../common_ui.dart';
-import 'app_assets.dart';
-import 'app_colors.dart';
-import 'app_colors_dark.dart';
+import 'assets/app_assets.dart';
+import 'colors/app_colors.dart';
+import 'colors/app_colors_dark.dart';
 import 'app_sizes.dart';
 import 'app_text_theme.dart';
-import 'color_schemes.dart';
+import 'colors/color_schemes.dart';
 
 extension ThemeUtils on ThemeData {
   AppColors get colors =>

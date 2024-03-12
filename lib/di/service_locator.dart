@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 final locator = GetIt.instance;
 
 Future<void> setupDependencies() async {
+  // Same as shared preference
   await GetStorage.init();
 
   // Auth dependencies

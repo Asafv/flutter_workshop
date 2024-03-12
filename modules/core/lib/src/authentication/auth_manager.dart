@@ -4,8 +4,8 @@ class AuthManager {
   final AuthRepository authRepository;
   AuthManager({required this.authRepository});
 
-  AuthState authState = AuthState.none;
   // default for starting the app
+  AuthState authState = AuthState.none;
   bool isBiometricRequired = true;
 
   Future<AuthManager> init() async {
@@ -39,4 +39,6 @@ class AuthManager {
     await _checkAuthState();
     return isLoggedOut;
   }
+
+  // TODO add biometric auth state change and handling
 }

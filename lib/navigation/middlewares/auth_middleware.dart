@@ -13,14 +13,16 @@ class AuthMiddleware extends GetMiddleware {
     debugPrint("authState: ${_authManager.authState}");
 
     switch (_authManager.authState) {
+      // TODO optional: if first time app open, we can show an onboarding page before login page.
       case AuthState.none:
       case AuthState.loginRequired:
         return RouteSettings(name: Routes.login.path);
 
-      // TODO add biometric route if auth state is required
+      // TODO navigate to biometric route if biometric state is required
       case AuthState.biometricRequired:
       // return RouteSettings(name: Routes.biometric.path);
 
+      // returning null when we don't need to redirect
       case AuthState.authenticated:
         return null;
     }

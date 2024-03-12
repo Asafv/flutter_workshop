@@ -7,6 +7,7 @@ class AppSizes {
   double get defaultPadding => 16;
   double get mediumPadding => 24;
   double get largePadding => 40;
+  double get xLargePadding => 60;
 
   /// Logo Sizes
   Size get smallLogoSize => Size(65, 65);

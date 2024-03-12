@@ -12,6 +12,7 @@ import 'package:models/models.dart';
 //   (page → binding → controller with stateMixing<YourStateClass> → authManager)
 
 class HomePage extends StatelessWidget {
+  // TODO handle state changes from inside the controller!
   final RxBool _toTheMoon = true.obs;
 
   HomePage({super.key});
