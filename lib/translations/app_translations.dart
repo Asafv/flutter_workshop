@@ -1,5 +1,6 @@
 import 'package:common_dependencies/common_dependencies.dart';
 
+// Easy translations providered by GetX
 class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {

@@ -79,6 +79,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  // TODO move this inside module! use Get.toNamed to navigate
   Future<dynamic>? _settingsPage() {
     // Get.to() = dynamic widget loading as a page.. for extra flexability without defining in routes
     return Get.to(
