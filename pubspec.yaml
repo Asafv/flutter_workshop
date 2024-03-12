@@ -52,7 +52,7 @@ scripts:
   prod: flutter run --flavor prod --dart-define="FLAVOR=prod"
   
   create:
-    # splash: dart run flutter_native_splash:create
+    splash: dart run flutter_native_splash:create
     module: dart create -t package
 
 
