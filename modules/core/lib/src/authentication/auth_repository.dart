@@ -8,7 +8,8 @@ class AuthRepository {
   final GetStorage _storage = GetStorage();
 
   final RemoteAuth remoteAuth;
-  AuthRepository({required this.remoteAuth});
+  final LocalAuth localAuth;
+  AuthRepository({required this.remoteAuth, required this.localAuth});
 
   bool isLoggedIn() => _storage.read(kIsLoggedIn) ?? false;
 
@@ -23,4 +24,6 @@ class AuthRepository {
     await _storage.write(kIsLoggedIn, false);
     return isLoggedOut;
   }
+
+  biometricLogin() async => await localAuth.biometricMock();
 }

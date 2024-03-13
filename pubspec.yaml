@@ -25,8 +25,9 @@ dependencies:
   # UI modules
   login:
     path: ./modules/ui/login
+  biometric:
+    path: ./modules/ui/biometric
 
-    # TODO add biometric module
     # TODO add home module
     # TODO add settings module
   

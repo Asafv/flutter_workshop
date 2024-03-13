@@ -17,7 +17,12 @@ class AppTranslations extends Translations {
           "loginInProgress": "Login in progress\nThis can take a while...",
           "login": "Login",
           "tryAgainError": "Something went wrong.\nPlease try again.",
-          "tryAgain": "Try Again"
+          "tryAgain": "Try Again",
+          "biometricTitle": "Biometric Required",
+          "biometricDescription":
+              "We keep your data safe with biometric entrance!",
+          "biometricLogin": "Biometric Login",
+          "biometricError": "Biometric Error, Please try again",
         }
       };
 }

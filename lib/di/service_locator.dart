@@ -10,8 +10,10 @@ Future<void> setupDependencies() async {
   await GetStorage.init();
 
   // Auth dependencies
-  locator.registerSingleton<AuthRepository>(
-      AuthRepository(remoteAuth: RemoteAuth()));
+  locator.registerSingleton<AuthRepository>(AuthRepository(
+    remoteAuth: RemoteAuth(),
+    localAuth: LocalAuth(),
+  ));
 
   locator.registerSingletonAsync(() async {
     final authManager =

@@ -18,9 +18,8 @@ class AuthMiddleware extends GetMiddleware {
       case AuthState.loginRequired:
         return RouteSettings(name: Routes.login.path);
 
-      // TODO navigate to biometric route if biometric state is required
       case AuthState.biometricRequired:
-      // return RouteSettings(name: Routes.biometric.path);
+        return RouteSettings(name: Routes.biometric.path);
 
       // returning null when we don't need to redirect
       case AuthState.authenticated:

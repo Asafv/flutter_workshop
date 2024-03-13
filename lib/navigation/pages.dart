@@ -1,3 +1,4 @@
+import 'package:biometric/biometric.dart';
 import 'package:common_dependencies/common_dependencies.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,14 @@ final pages = [
     page: () => LoginPage(),
   ),
 
-  // TODO add biometric page (from biometric module)
+  GetPage(
+    name: Routes.biometric.path,
+    transition: Transition.fade,
+    curve: Curves.easeInOut,
+    transitionDuration: const Duration(milliseconds: 300),
+    binding: BiometricBinding(),
+    page: () => BiometricPage(),
+  ),
 
   // TODO add settings page (from settings module)
 ];
