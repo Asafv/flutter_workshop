@@ -1,4 +1,4 @@
-name: home
+name: settings
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
 publish_to: none
@@ -9,11 +9,13 @@ environment:
 # Add regular dependencies here.
 dependencies:
   models:
-    path: ../../models 
+    path: ../../models
   common_dependencies:
     path: ../../common_dependencies 
   common_ui:
     path: ../../common_ui 
+  core:
+    path: ../../core 
 
 dev_dependencies:
   lints: ^3.0.0

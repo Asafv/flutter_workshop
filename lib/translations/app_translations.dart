@@ -24,6 +24,8 @@ class AppTranslations extends Translations {
               "We keep your data safe with biometric entrance!",
           "biometricLogin": "Biometric Login",
           "biometricError": "Biometric Error, Please try again",
+          "logout": "Logout",
+          "settings": "Settings",
         }
       };
 }

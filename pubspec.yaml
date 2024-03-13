@@ -29,9 +29,8 @@ dependencies:
     path: ./modules/ui/biometric
   home:
     path: ./modules/ui/home
-
-    # TODO add home module
-    # TODO add settings module
+  settings:
+    path: ./modules/ui/settings
   
 dev_dependencies:
   flutter_test:
