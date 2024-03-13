@@ -5,6 +5,7 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         "en_US": {
+          "flutterWorkshop": "Flutter Workshop",
           "toTheMoon": "To the Moon!",
           "toTheGround": "To the Ground!",
           "crashToGround": "Crash to Ground",
